@@ -1,1 +1,9 @@
-/* stylelint-disable no-empty-source */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
