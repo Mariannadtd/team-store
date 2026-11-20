@@ -25,7 +25,8 @@ export function renderAboutPage(): HTMLElement {
   const heroSection = createElement('section', 'hero-about');
   const title = createElement('h1', 'about-title', 'About us...');
   const subtitle = createElement('p', 'about-subtitle');
-  const shopName = createElement('span', 'shop-name', '[Team Store]');
+  const shopName = createElement('a', 'shop-name', '[Team Store]');
+  shopName.href = '#';
   subtitle.append(
     'Welcome to ',
     shopName,
