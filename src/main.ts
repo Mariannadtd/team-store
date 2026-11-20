@@ -8,8 +8,8 @@ if (!app) {
   throw new Error('Не найден элемент #app');
 }
 
-app.innerHTML = `
-  <h1>Team Store</h1>
-`;
+// app.innerHTML = `
+//   <h1>Team Store</h1>
+// `;
 
 app.append(renderAboutPage());
