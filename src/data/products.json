@@ -4,18 +4,18 @@
     "title": "Nokia C3-00",
     "brand": "Nokia",
     "model": "C3-00",
-    "description": "Кнопочный телефон с полноценной QWERTY-клавиатурой.",
+    "description": "A feature phone with a full QWERTY keyboard.",
     "price": 4990,
-    "category": "QWERTY-телефоны",
+    "category": "QWERTY Phones",
     "image": "/assets/products/nokia-c3-00.jpg",
     "stock": 4,
     "specs": {
       "simCards": 1,
       "bluetooth": true,
       "a2dp": true,
-      "camera": "2 Мп",
+      "camera": "2 MP",
       "memoryCard": "microSD",
-      "formFactor": "моноблок"
+      "formFactor": "candy bar"
     }
   },
   {
@@ -23,9 +23,9 @@
     "title": "Samsung SGH-E700",
     "brand": "Samsung",
     "model": "SGH-E700",
-    "description": "Компактная раскладушка с внешним экраном и камерой.",
+    "description": "A compact flip phone with an external display and camera.",
     "price": 4490,
-    "category": "Раскладушки",
+    "category": "Flip Phones",
     "image": "/assets/products/samsung-sgh-e700.jpg",
     "stock": 2,
     "specs": {
@@ -33,8 +33,8 @@
       "bluetooth": false,
       "a2dp": false,
       "camera": "VGA",
-      "memoryCard": "Нет",
-      "formFactor": "раскладушка"
+      "memoryCard": "None",
+      "formFactor": "clamshell"
     }
   },
   {
@@ -42,18 +42,18 @@
     "title": "Nokia 3110 Classic",
     "brand": "Nokia",
     "model": "3110 Classic",
-    "description": "Классический кнопочный телефон с камерой и поддержкой карт памяти.",
+    "description": "A classic feature phone with a camera and memory card support.",
     "price": 3990,
-    "category": "Кнопочные телефоны",
+    "category": "Feature Phones",
     "image": "/assets/products/nokia-3110-classic.jpg",
     "stock": 5,
     "specs": {
       "simCards": 1,
       "bluetooth": true,
       "a2dp": true,
-      "camera": "1,3 Мп",
+      "camera": "1.3 MP",
       "memoryCard": "microSD",
-      "formFactor": "моноблок"
+      "formFactor": "candy bar"
     }
   },
   {
@@ -61,18 +61,18 @@
     "title": "Samsung C260",
     "brand": "Samsung",
     "model": "C260",
-    "description": "Простая раскладушка для звонков и сообщений.",
+    "description": "A simple flip phone for calls and text messages.",
     "price": 2990,
-    "category": "Раскладушки",
+    "category": "Flip Phones",
     "image": "/assets/products/samsung-c260.jpg",
     "stock": 3,
     "specs": {
       "simCards": 1,
       "bluetooth": false,
       "a2dp": false,
-      "camera": "Нет",
-      "memoryCard": "Нет",
-      "formFactor": "раскладушка"
+      "camera": "None",
+      "memoryCard": "None",
+      "formFactor": "clamshell"
     }
   },
   {
@@ -80,18 +80,18 @@
     "title": "Alcatel OT-808",
     "brand": "Alcatel",
     "model": "OT-808",
-    "description": "Женская раскладушка с QWERTY-клавиатурой и двумя SIM-картами.",
+    "description": "A stylish flip phone with a QWERTY keyboard and dual SIM support.",
     "price": 5490,
-    "category": "QWERTY-телефоны",
+    "category": "QWERTY Phones",
     "image": "/assets/products/alcatel-ot-808.jpg",
     "stock": 2,
     "specs": {
       "simCards": 2,
       "bluetooth": true,
       "a2dp": true,
-      "camera": "2 Мп",
+      "camera": "2 MP",
       "memoryCard": "microSD",
-      "formFactor": "раскладушка"
+      "formFactor": "clamshell"
     }
   },
   {
@@ -99,9 +99,9 @@
     "title": "Sony Ericsson W200i",
     "brand": "Sony Ericsson",
     "model": "W200i",
-    "description": "Музыкальный телефон серии Walkman с FM-радио.",
+    "description": "A Walkman music phone with an FM radio.",
     "price": 4290,
-    "category": "Музыкальные телефоны",
+    "category": "Music Phones",
     "image": "/assets/products/sony-ericsson-w200i.jpg",
     "stock": 4,
     "specs": {
@@ -110,7 +110,7 @@
       "a2dp": false,
       "camera": "VGA",
       "memoryCard": "Memory Stick Micro",
-      "formFactor": "моноблок"
+      "formFactor": "candy bar"
     }
   },
   {
@@ -118,18 +118,18 @@
     "title": "Alcatel One Touch Easy",
     "brand": "Alcatel",
     "model": "One Touch Easy",
-    "description": "Яркий телефон с крупными клавишами и внешней антенной.",
+    "description": "A bright feature phone with large buttons and an external antenna.",
     "price": 2490,
-    "category": "Кнопочные телефоны",
+    "category": "Feature Phones",
     "image": "/assets/products/alcatel-one-touch-easy.jpg",
     "stock": 1,
     "specs": {
       "simCards": 1,
       "bluetooth": false,
       "a2dp": false,
-      "camera": "Нет",
-      "memoryCard": "Нет",
-      "formFactor": "моноблок"
+      "camera": "None",
+      "memoryCard": "None",
+      "formFactor": "candy bar"
     }
   },
   {
@@ -137,18 +137,18 @@
     "title": "Nokia 7610",
     "brand": "Nokia",
     "model": "7610",
-    "description": "Смартфон с необычным корпусом и операционной системой Symbian.",
+    "description": "A Symbian smartphone with a distinctive curved design.",
     "price": 5990,
-    "category": "Смартфоны",
+    "category": "Smartphones",
     "image": "/assets/products/nokia-7610.jpg",
     "stock": 3,
     "specs": {
       "simCards": 1,
       "bluetooth": true,
       "a2dp": false,
-      "camera": "1 Мп",
+      "camera": "1 MP",
       "memoryCard": "RS-MMC",
-      "formFactor": "моноблок"
+      "formFactor": "candy bar"
     }
   },
   {
@@ -156,18 +156,18 @@
     "title": "Samsung Galaxy Y",
     "brand": "Samsung",
     "model": "Galaxy Y",
-    "description": "Компактный сенсорный смартфон на операционной системе Android.",
+    "description": "A compact touchscreen smartphone powered by Android.",
     "price": 6490,
-    "category": "Смартфоны",
+    "category": "Smartphones",
     "image": "/assets/products/samsung-galaxy-y.jpg",
     "stock": 2,
     "specs": {
       "simCards": 1,
       "bluetooth": true,
       "a2dp": true,
-      "camera": "2 Мп",
+      "camera": "2 MP",
       "memoryCard": "microSD",
-      "formFactor": "сенсорный моноблок"
+      "formFactor": "touchscreen"
     }
   },
   {
@@ -175,9 +175,9 @@
     "title": "Nokia 7600",
     "brand": "Nokia",
     "model": "7600",
-    "description": "Необычный имиджевый телефон с клавишами по бокам экрана.",
+    "description": "A distinctive fashion phone with buttons positioned around the display.",
     "price": 7990,
-    "category": "Имиджевые телефоны",
+    "category": "Fashion Phones",
     "image": "/assets/products/nokia-7600.jpg",
     "stock": 1,
     "specs": {
@@ -185,8 +185,8 @@
       "bluetooth": true,
       "a2dp": false,
       "camera": "VGA",
-      "memoryCard": "Нет",
-      "formFactor": "моноблок"
+      "memoryCard": "None",
+      "formFactor": "candy bar"
     }
   },
   {
@@ -194,18 +194,18 @@
     "title": "Nokia N70 Music Edition",
     "brand": "Nokia",
     "model": "N70 Music Edition",
-    "description": "Мультимедийный смартфон с музыкальным проигрывателем и камерой.",
+    "description": "A multimedia smartphone with a music player and camera.",
     "price": 6990,
-    "category": "Музыкальные телефоны",
+    "category": "Music Phones",
     "image": "/assets/products/nokia-n70.jpg",
     "stock": 3,
     "specs": {
       "simCards": 1,
       "bluetooth": true,
       "a2dp": false,
-      "camera": "2 Мп",
+      "camera": "2 MP",
       "memoryCard": "RS-MMC",
-      "formFactor": "моноблок"
+      "formFactor": "candy bar"
     }
   },
   {
@@ -213,18 +213,18 @@
     "title": "Siemens A55",
     "brand": "Siemens",
     "model": "A55",
-    "description": "Надёжный кнопочный телефон с простым управлением.",
+    "description": "A reliable feature phone with simple and convenient controls.",
     "price": 2290,
-    "category": "Кнопочные телефоны",
+    "category": "Feature Phones",
     "image": "/assets/products/siemens-a55.jpg",
     "stock": 6,
     "specs": {
       "simCards": 1,
       "bluetooth": false,
       "a2dp": false,
-      "camera": "Нет",
-      "memoryCard": "Нет",
-      "formFactor": "моноблок"
+      "camera": "None",
+      "memoryCard": "None",
+      "formFactor": "candy bar"
     }
   },
   {
@@ -232,9 +232,9 @@
     "title": "Motorola RAZR V3",
     "brand": "Motorola",
     "model": "RAZR V3",
-    "description": "Тонкая металлическая раскладушка с узнаваемым дизайном.",
+    "description": "A slim metal flip phone with an iconic design.",
     "price": 7490,
-    "category": "Раскладушки",
+    "category": "Flip Phones",
     "image": "/assets/products/motorola-razr-v3.jpg",
     "stock": 2,
     "specs": {
@@ -242,8 +242,8 @@
       "bluetooth": true,
       "a2dp": false,
       "camera": "VGA",
-      "memoryCard": "Нет",
-      "formFactor": "раскладушка"
+      "memoryCard": "None",
+      "formFactor": "clamshell"
     }
   },
   {
@@ -251,18 +251,18 @@
     "title": "Nokia 5300 XpressMusic",
     "brand": "Nokia",
     "model": "5300 XpressMusic",
-    "description": "Музыкальный слайдер с отдельными клавишами управления плеером.",
+    "description": "A music slider phone with dedicated media control buttons.",
     "price": 5990,
-    "category": "Музыкальные телефоны",
+    "category": "Music Phones",
     "image": "/assets/products/nokia-5300.jpg",
     "stock": 4,
     "specs": {
       "simCards": 1,
       "bluetooth": true,
       "a2dp": true,
-      "camera": "1,3 Мп",
+      "camera": "1.3 MP",
       "memoryCard": "microSD",
-      "formFactor": "слайдер"
+      "formFactor": "slider"
     }
   }
 ]
