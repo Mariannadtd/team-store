@@ -1,1 +1,31 @@
-/* stylelint-disable no-empty-source */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-surface);
+  border-radius: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+@media (width <= 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

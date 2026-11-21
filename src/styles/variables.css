@@ -1,7 +1,10 @@
 :root {
-  --color-background: #f7f7f7;
-  --color-surface: #fff;
-  --color-text: #1a1a1a;
-  --color-primary: #2563eb;
-  --content-width: 1200px;
+  --color-background: #2d2d44;
+  --color-surface: #212127;
+  --color-text: #e4e3ec;
+  --color-primary: #00d7d2;
+  --color-secondary: #8e72ee;
+  --color-accent: #ca0c75;
+  --content-width: 1440px;
+  --font-family: 'Arsenal SC', sans-serif;
 }
