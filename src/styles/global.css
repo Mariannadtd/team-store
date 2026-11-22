@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+#app {
+  min-height: 100vh;
+  width: 100%;
+}
+
 body {
   min-width: 320px;
   min-height: 100vh;
@@ -32,10 +37,6 @@ img {
 button,
 input {
   font: inherit;
-}
-
-#app {
-  min-height: 100vh;
 }
 
 ul {
