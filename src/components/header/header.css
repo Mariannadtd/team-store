@@ -58,4 +58,12 @@ header {
 .nav-link {
   gap: 20px;
   padding: 10px 20px;
+  color: var(--color-accent);
+}
+
+.nav-link.active,
+.cart.active {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  color: var(--color-background);
 }

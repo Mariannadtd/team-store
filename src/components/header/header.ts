@@ -1,6 +1,11 @@
 import './header.css';
 import cartImgUrl from '../../assets/logos/cart-logo.png';
 
+export interface HeaderComponent {
+  element: HTMLElement;
+  setActiveRoute: (route: string) => void;
+}
+
 export function createLogo(): HTMLAnchorElement {
   const link = document.createElement('a');
   link.href = '#/about';
@@ -27,7 +32,7 @@ export function createNavigation(): HTMLElement {
   aboutLink.href = '#/about';
   aboutLink.className = 'nav-link';
   aboutLink.dataset.route = '/about';
-  aboutLink.textContent = 'About';
+  aboutLink.textContent = 'About us';
 
   const productsLink = document.createElement('a');
   productsLink.href = '#/products';
@@ -53,8 +58,17 @@ export function createCartLink(): HTMLAnchorElement {
   return link;
 }
 
-export function createHeader(): HTMLElement {
+export function createHeader(): HeaderComponent {
   const header = document.createElement('header');
   header.append(createLogo(), createNavigation(), createCartLink());
-  return header;
+  const allLinks = header.querySelectorAll<HTMLAnchorElement>('a[data-route]');
+
+  const setActiveRoute = (currentRoute: string): void => {
+    allLinks.forEach((link) => {
+      const isActive = link.dataset.route === currentRoute;
+      link.classList.toggle('active', isActive);
+    });
+  };
+
+  return { element: header, setActiveRoute };
 }
