@@ -43,6 +43,11 @@ header {
   color: var(--color-accent);
 }
 
+.navigation {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .cart {
   width: 50px;
   height: 50px;
@@ -66,4 +71,13 @@ header {
   background-color: var(--color-primary);
   border-radius: 10px;
   color: var(--color-background);
+}
+
+@media (width <= 550px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
