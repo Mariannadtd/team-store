@@ -13,7 +13,7 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   font-family: var(--font-family);
-  padding: 40px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
