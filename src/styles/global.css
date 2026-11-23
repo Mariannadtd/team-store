@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+#app {
+  min-height: 100vh;
+  width: 100%;
+}
+
 body {
   min-width: 320px;
   min-height: 100vh;
@@ -13,7 +18,7 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   font-family: var(--font-family);
-  padding: 40px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,10 +39,6 @@ input {
   font: inherit;
 }
 
-#app {
-  min-height: 100vh;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -45,7 +46,7 @@ ul {
 }
 
 a {
-  color: inherit;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
