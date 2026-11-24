@@ -1,4 +1,5 @@
 import './about.css';
+import { createElement } from '../../utils/create-element.js';
 
 interface TeamMember {
   name: string;
@@ -8,24 +9,13 @@ interface TeamMember {
   contribution: string;
 }
 
-function createElement<K extends keyof HTMLElementTagNameMap>(
-  tag: K,
-  className?: string,
-  textContent?: string,
-): HTMLElementTagNameMap[K] {
-  const el = document.createElement(tag);
-  if (className) el.className = className;
-  if (textContent) el.textContent = textContent;
-  return el;
-}
-
 export function renderAboutPage(): HTMLElement {
   const container = createElement('div', 'about-container');
 
   const heroSection = createElement('section', 'hero-about');
   const title = createElement('h1', 'about-title', 'About us...');
   const subtitle = createElement('p', 'about-subtitle');
-  const shopName = createElement('a', 'shop-name', '[Team Store]');
+  const shopName = createElement('a', 'shop-name', 'VINTAGE');
   shopName.href = '#';
   subtitle.append(
     'Welcome to ',
