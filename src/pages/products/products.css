@@ -1,1 +1,27 @@
-/* stylelint-disable no-empty-source */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.products-not-found {
+  grid-column: 1 / -1;
+  display: grid;
+  place-items: center;
+  min-height: 50vh;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (width <= 1170px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
