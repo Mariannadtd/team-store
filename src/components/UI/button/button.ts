@@ -1,4 +1,5 @@
 import './button.css';
+import { createElement } from '../../../utils/create-element.js';
 
 export interface ButtonOptions {
   text: string;
@@ -8,11 +9,9 @@ export interface ButtonOptions {
 }
 
 export function createButton(options: ButtonOptions): HTMLButtonElement {
-  const button = document.createElement('button');
+  const button = createElement('button', 'button', options.text);
 
   button.type = 'button';
-  button.className = 'button';
-  button.textContent = options.text;
   button.disabled = options.disabled ?? false;
   if (options.className) {
     button.classList.add(options.className);

@@ -24,6 +24,10 @@ li {
   margin-bottom: 10px;
 }
 
+.shop-name {
+  font-weight: 700;
+}
+
 @media (width <= 768px) {
   .team-grid {
     grid-template-columns: 1fr;

@@ -1,5 +1,6 @@
 import './header.css';
 import cartImgUrl from '../../assets/logos/cart-logo.png';
+import { createElement } from '../../utils/create-element.js';
 
 export interface HeaderComponent {
   element: HTMLElement;
@@ -7,52 +8,39 @@ export interface HeaderComponent {
 }
 
 export function createLogo(): HTMLAnchorElement {
-  const link = document.createElement('a');
+  const link = createElement('a', 'logo');
   link.href = '#/about';
-  link.className = 'logo';
   link.dataset.route = '/about';
 
-  const logoTitle = document.createElement('span');
-  logoTitle.className = 'logo-title';
-  logoTitle.textContent = 'VINTAGE';
-
-  const logoSubtitle = document.createElement('span');
-  logoSubtitle.className = 'logo-subtitle';
-  logoSubtitle.textContent = 'Mobile Phones';
+  const logoTitle = createElement('span', 'logo-title', 'VINTAGE');
+  const logoSubtitle = createElement('span', 'logo-subtitle', 'Mobile Phones');
 
   link.append(logoTitle, logoSubtitle);
   return link;
 }
 
 export function createNavigation(): HTMLElement {
-  const nav = document.createElement('nav');
-  nav.className = 'navigation';
+  const nav = createElement('nav', 'navigation');
 
-  const aboutLink = document.createElement('a');
+  const aboutLink = createElement('a', 'nav-link', 'About us');
   aboutLink.href = '#/about';
-  aboutLink.className = 'nav-link';
   aboutLink.dataset.route = '/about';
-  aboutLink.textContent = 'About us';
 
-  const productsLink = document.createElement('a');
+  const productsLink = createElement('a', 'nav-link', 'Products');
   productsLink.href = '#/products';
-  productsLink.className = 'nav-link';
   productsLink.dataset.route = '/products';
-  productsLink.textContent = 'Products';
 
   nav.append(aboutLink, productsLink);
   return nav;
 }
 export function createCartLink(): HTMLAnchorElement {
-  const link = document.createElement('a');
+  const link = createElement('a', 'cart');
   link.href = '#/cart';
-  link.className = 'cart';
   link.dataset.route = '/cart';
 
-  const img = document.createElement('img');
+  const img = createElement('img', 'cart-icon');
   img.src = cartImgUrl;
   img.alt = 'Cart logo';
-  img.className = 'cart-icon';
 
   link.append(img);
   return link;
