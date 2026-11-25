@@ -73,3 +73,9 @@ h3 {
 a:hover {
   color: var(--color-primary);
 }
+
+@media (width <= 768px) {
+  body {
+    padding: 20px 16px;
+  }
+}
