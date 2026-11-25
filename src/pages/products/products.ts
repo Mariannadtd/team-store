@@ -2,6 +2,11 @@ import './products.css';
 import { createProductCard } from '../../components/product-card/product-card.js';
 import ProductsData from '../../data/products.json';
 import type { Product } from '../../types/product.js';
+import { cartStore } from '../../store/cart-store.js';
+
+function addProductToCart(product: Product): void {
+  cartStore.addItem(product);
+}
 
 export function renderProductsPage(products: Product[] = ProductsData): HTMLElement {
   const productsGrid = document.createElement('div');
@@ -15,7 +20,7 @@ export function renderProductsPage(products: Product[] = ProductsData): HTMLElem
     return productsGrid;
   }
 
-  const cards = ProductsData.map((product) => createProductCard(product));
+  const cards = products.map((product) => createProductCard(product, addProductToCart));
   cards.forEach((card) => productsGrid.append(card));
   return productsGrid;
 }
