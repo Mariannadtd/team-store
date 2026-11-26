@@ -29,4 +29,24 @@ export const cartStore = {
 
     return true;
   },
+  decreaseItem(productId: number): boolean {
+    const existingItem = items.find((item) => item.productId === productId);
+    if (!existingItem || existingItem.quantity <= 1) {
+      return false;
+    }
+    existingItem.quantity -= 1;
+    return true;
+  },
+
+  removeItem(productId: number): boolean {
+    const itemIndex = items.findIndex((item) => item.productId === productId);
+
+    if (itemIndex === -1) {
+      return false;
+    }
+
+    items.splice(itemIndex, 1);
+
+    return true;
+  },
 };
