@@ -2,7 +2,7 @@ import './styles/variables.css';
 import './styles/global.css';
 import { renderAboutPage } from './pages/about/about.js';
 import { createHeader } from './components/header/header.js';
-import { renderProductsPage } from './pages/products/products.js';
+import { renderShopPage } from './pages/products/products.js';
 import { renderCartPage } from './pages/cart/cart.js';
 import { initRouter } from './app/router.js';
 
@@ -20,7 +20,7 @@ app.append(header.element, pageOutlet);
 initRouter({
   routes: {
     '/about': renderAboutPage,
-    '/products': renderProductsPage,
+    '/products': renderShopPage,
     '/cart': renderCartPage,
   },
   defaultRoute: '/about',
