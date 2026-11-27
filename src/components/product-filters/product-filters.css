@@ -1,0 +1,9 @@
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-surface);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
