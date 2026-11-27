@@ -1,4 +1,5 @@
 import './header.css';
+import { cartStore } from '../../store/cart-store.js';
 import cartImgUrl from '../../assets/logos/cart-logo.png';
 import { createElement } from '../../utils/create-element.js';
 
@@ -37,12 +38,23 @@ export function createCartLink(): HTMLAnchorElement {
   const link = createElement('a', 'cart');
   link.href = '#/cart';
   link.dataset.route = '/cart';
-
   const img = createElement('img', 'cart-icon');
   img.src = cartImgUrl;
   img.alt = 'Cart logo';
+  const cartCount = createElement('span', 'cart-count');
+  const updateCartCount = (): void => {
+    const totalQuantity = cartStore.getTotalQuantity();
+    cartCount.textContent = String(totalQuantity);
+    cartCount.hidden = totalQuantity === 0;
+    link.setAttribute(
+      'aria-label',
+      totalQuantity === 0 ? 'Cart is empty' : `Cart with ${totalQuantity} items`,
+    );
+  };
 
-  link.append(img);
+  updateCartCount();
+  cartStore.subscribe(updateCartCount);
+  link.append(img, cartCount);
   return link;
 }
 
