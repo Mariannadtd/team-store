@@ -4,8 +4,8 @@ import ProductsData from '../../data/products.json';
 import type { Product } from '../../types/product.js';
 import { cartStore } from '../../store/cart-store.js';
 
-function addProductToCart(product: Product): void {
-  cartStore.addItem(product);
+function addProductToCart(product: Product): boolean {
+  return cartStore.addItem(product);
 }
 
 export function renderProductsPage(products: Product[] = ProductsData): HTMLElement {
@@ -20,7 +20,11 @@ export function renderProductsPage(products: Product[] = ProductsData): HTMLElem
     return productsGrid;
   }
 
-  const cards = products.map((product) => createProductCard(product, addProductToCart));
+  const cards = products.map((product) => {
+    const isInCart = cartStore.hasItem(product.id);
+
+    return createProductCard(product, addProductToCart, isInCart);
+  });
   cards.forEach((card) => productsGrid.append(card));
   return productsGrid;
 }

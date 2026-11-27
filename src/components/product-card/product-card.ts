@@ -4,7 +4,8 @@ import type { Product } from '../../types/product.js';
 
 export function createProductCard(
   product: Product,
-  onAddToCart?: (product: Product) => void,
+  onAddToCart: (product: Product) => boolean,
+  isInCart: boolean,
 ): HTMLElement {
   const card = document.createElement('div');
   card.className = 'product-card';
@@ -59,11 +60,27 @@ export function createProductCard(
   productFullSummary.className = 'infospec-summary';
   productFullSummary.append(productInfo, productSpecs);
 
+  let buttonText = 'Add to cart';
+
+  if (product.stock === 0) {
+    buttonText = 'Out of stock';
+  } else if (isInCart) {
+    buttonText = 'In cart';
+  }
+  const isButtonDisabled = product.stock === 0 || isInCart;
+
   const addToCartButton = createButton({
-    text: 'Add to cart',
-    disabled: product.stock === 0,
+    text: buttonText,
+    disabled: isButtonDisabled,
     className: 'add-to-cart-button',
-    onClick: () => onAddToCart?.(product),
+    onClick: () => {
+      const wasAdded = onAddToCart(product);
+
+      if (wasAdded) {
+        addToCartButton.textContent = 'In cart';
+        addToCartButton.disabled = true;
+      }
+    },
   });
 
   const fullTextContent = document.createElement('div');
